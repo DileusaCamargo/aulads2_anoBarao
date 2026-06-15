@@ -1,0 +1,127 @@
+body{
+    background-color: rgb(179, 195, 186);
+}
+.cabecalho{
+    background-color: burlywood;
+    text-align: center;
+    padding: 20px;
+    color: aliceblue;
+}
+.cabecalho img{
+    width:10% ;
+    height: auto;
+    border-radius: 50%;
+}
+.cabecalho h1{
+    margin: 10px 0 5px 0;
+    
+}
+nav a{
+    color: coral;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+        /* Container principal */
+        .container-galeria {
+            display: flex;            /* Alinha os itens em linha */
+            justify-content: center;  /* Centraliza o grupo na tela */
+            gap: 20px;                /* Espaço entre as fotos */
+            padding: 20px;
+            flex-wrap: wrap;          /* Permite quebra de linha em telas menores */
+        }
+
+        /* Cada bloco de imagem + texto */
+        .item-galeria {
+            flex: 1;                        /* Faz os itens crescerem igualmente */
+            min-width: 250px;                 /* Largura mínima antes de quebrar linha */
+            max-width: 350px;                  /* Largura máxima para não ficar gigante */
+            margin: 0;
+            text-align: center;               /* Centraliza o texto */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding-bottom: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Estilo da Imagem */
+        .item-galeria img {
+            width: 100%;                 /* Ocupa toda a largura do bloco */
+            height: 200px;                 /* Altura fixa para manter o padrão */
+            object-fit: cover;            /* Corta a imagem sem distorcer */
+            border-radius: 8px 8px 0 0;    /* Arredonda apenas o topo */
+        }
+
+        /* Estilo da Legenda */
+        .item-galeria figcaption {
+            margin-top: 10px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: #333;
+            padding: 0 10px;
+        }
+
+
+        
+.container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap; /* Garante que quebre linha em telas pequenas */
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #ffffff;
+            width: 200px;
+            height: 250px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 2px solid #c5a059; /* Dourado egípcio */
+        }
+
+        .card:hover {
+            transform: translateY(-10px); 
+            background-color: #fffaf0;
+        }
+
+        .card i {
+            font-size: 3rem;
+            color: #77fda8;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.4;
+        }
+
+
+
+        /* Ajuste para telas muito pequenas */
+        @media (max-width: 600px) {
+            .item-galeria {
+                flex: 1 1 100%;       /* Ocupa 100% da largura no celular */
+            }
+        }
+    

@@ -1,0 +1,59 @@
+/* Configurações Gerais */
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+}
+
+/* Container Principal (Article) */
+article {
+  max-width:800px;
+  margin: 0 auto;
+  background: #ac6e6e;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(27, 24, 122, 0.1);
+}
+
+/* Cabeçalho do Artigo */
+header {
+  border-bottom: 3px solid #e67e22; /* Laranja culinário */
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+header h1 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Estilização das Sections */
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-left: 5px solid #ecf0f1;
+  transition: border-color 0.3s ease;
+}
+
+/* Efeito visual ao passar o mouse na seção */
+section:hover {
+  border-left-color: #e67e22;
+  background-color: #eff7f8;
+}
+
+/* Títulos das Seções (h2) */
+section h2 {
+  color: #d35400;
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+/* Parágrafos */
+section p {
+  font-size: 1.1rem;
+  color: #555;
+}

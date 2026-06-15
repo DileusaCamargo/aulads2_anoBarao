@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão com JavaScript</title>
+    <style>
+        /* Configuração da página */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #FDFBF7 0%, #F5F0E6 100%);
+            color: #332F28;
+        }
+
+        /* Estilização do Texto */
+        #mensagem {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        /* Estilização do Botão */
+        .meu-botao {
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            background-color: #764ba2; /* Cor base */
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        /* Efeito ao passar o mouse */
+        .meu-botao:hover {
+            background-color: #667eea;
+        }
+
+        /* Efeito ao clicar */
+        .meu-botao:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+    <p id="mensagem">O JavaScript está aguardando o seu clique...</p>
+    
+    <button class="meu-botao" onclick="executarAcao()">Clique Aqui</button>
+
+    <script>
+        function executarAcao() {
+            // 1. Captura o elemento de texto pelo ID
+            const texto = document.getElementById('mensagem');
+            
+            // 2. Altera o conteúdo do texto
+            texto.innerText = "¡Pronto! O JavaScript funcionou com sucesso. 🎉";
+            
+            // 3. Altera a cor do texto dinamicamente
+            texto.style.color = "#764ba2";
+        }
+    </script>
+
+</body>
+</html>

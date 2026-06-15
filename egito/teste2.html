@@ -1,0 +1,59 @@
+
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplos de Section com ID e Class</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; color: #333; }
+        
+        /* Uso de CLASS: Estilo reutilizável para várias secções */
+        .card-section {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* Uso de ID: Estilo único para uma secção específica */
+        #contato {
+            background-color: #2c3e50;
+            color: white;
+            border-top: 5px solid #e67e22;
+        }
+
+        .highlight { color: #e67e22; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <!-- Exemplo 1: Usando apenas CLASS -->
+    <!-- Ideal quando tem várias secções que devem ter a mesma aparência -->
+    <section class="card-section">
+        <h2>Serviços de Consultoria</h2>
+        <p>Oferecemos suporte técnico especializado para a sua empresa.</p>
+    </section>
+
+    <section class="card-section">
+        <h2>Treinos Presenciais</h2>
+        <p>Aprenda as melhores práticas diretamente com os nossos especialistas.</p>
+    </section>
+
+
+    <!-- Exemplo 2: Usando ID -->
+    <!-- O ID deve ser ÚNICO na página. Ideal para âncoras de menu (ex: site.com/#sobre) -->
+    <section id="sobre-nos" class="card-section">
+        <h2>Sobre a Nossa História</h2>
+        <p>Fundada em 2010, a nossa missão é simplificar a tecnologia.</p>
+    </section>
+
+
+    <!-- Exemplo 3: Misturando os dois -->
+    <!-- A classe define a estrutura comum e o ID define a identidade única -->
+    <section id="contato" class="card-section">
+        <h2>Fale Connosco</h2>
+        <p>Envie um e-mail para <span class="highlight">suporte@exemplo.pt</span></p>
+    </section>
+
+</body>
+</html>
